@@ -1,8 +1,11 @@
 package com.hendisantika.kafkaproducerconsumer.controller;
 
 import com.google.gson.Gson;
+import com.hendisantika.kafkaproducerconsumer.model.SimpleModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -26,5 +29,10 @@ public class KafkaSimpleController {
     public KafkaSimpleController(KafkaTemplate<String, String> kafkaTemplate, Gson jsonConverter) {
         this.kafkaTemplate = kafkaTemplate;
         this.jsonConverter = jsonConverter;
+    }
+
+    @PostMapping
+    public void post(@RequestBody SimpleModel simpleModel) {
+        kafkaTemplate.send("myTopic", jsonConverter.toJson(simpleModel));
     }
 }
