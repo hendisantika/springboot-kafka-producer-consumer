@@ -1,0 +1,70 @@
+{
+  "info": {
+    "_postman_id": "cb8e778d-a4ff-4f83-8d30-c064b2498181",
+    "name": "Spring Boot Kafka Producer Consumer",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Sample 1",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"field1\": \"Uzumaki Naruto\",\n    \"field2\": \"Hokage of Konohagakure\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/kafka",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "kafka"
+          ]
+        },
+        "description": "Sample 1"
+      },
+      "response": []
+    },
+    {
+      "name": "Sample v2",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"title\": \"Cobra Kai\",\n    \"description\": \"Johny Lawrence\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/kafka/v2",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "kafka",
+            "v2"
+          ]
+        },
+        "description": "Sample v2"
+      },
+      "response": []
+    }
+  ]
+}
