@@ -51,4 +51,12 @@ public class KafkaSimpleController {
         SimpleModel simpleModel1 = jsonConverter.fromJson(simpleModel, SimpleModel.class);
         log.info(simpleModel1.toString());
     }
+
+    @KafkaListener(topics = "myTopic2")
+    public void getFromKafka2(String moreSimpleModel) {
+        log.info(moreSimpleModel);
+        MoreSimpleModel simpleModel1 = jsonConverter.fromJson(moreSimpleModel, MoreSimpleModel.class);
+        log.info(simpleModel1.toString());
+    }
+
 }
