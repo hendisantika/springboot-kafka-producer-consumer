@@ -10,3 +10,9 @@
 6. Import POSTMAN Collection
 
 Article Reference: https://medium.com/@Ankitthakur/apache-kafka-installation-on-mac-using-homebrew-a367cdefd273
+
+or You can use Kafka Confluent:
+
+* https://www.confluent.io/installation/
+* https://docs.confluent.io/platform/current/installation/docker/installation.html?_ga=2.213328855.256678281.1669946497-1212763068.1669946497&_gac=1.222188010.1669962327.Cj0KCQiAvqGcBhCJARIsAFQ5ke6h7w-O06_GtJ7M-VWXUtw0dlHEtRDZPNmZ-cxNtDpfyOncDr2dA5oaAsgeEALw_wcB#tutorials-and-demos
+* https://docs.confluent.io/platform/current/platform-quickstart.html#step-2-create-ak-topics-for-storing-your-data
