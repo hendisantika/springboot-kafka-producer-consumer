@@ -9,6 +9,28 @@
 5. Open POSTMAN App
 6. Import POSTMAN Collection
 
+API 1
+
+```shell
+curl --location 'localhost:8080/api/kafka' \
+--header 'Content-Type: application/json' \
+--data '{
+    "field1": "Belajar",
+    "field2": "Belajar"
+}'
+```
+
+API 2
+
+```shell
+curl --location 'localhost:8080/api/kafka/v2' \
+--header 'Content-Type: application/json' \
+--data '{
+    "title": "Belajar",
+    "description": "KAFKA"
+}'
+```
+
 Article Reference: https://medium.com/@Ankitthakur/apache-kafka-installation-on-mac-using-homebrew-a367cdefd273
 
 or You can use Kafka Confluent:
